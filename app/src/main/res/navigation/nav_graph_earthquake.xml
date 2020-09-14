@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/earthquakeListFragment">
+
+    <fragment
+        android:id="@+id/earthquakeListFragment"
+        android:name="com.example.bubble.earthquake.view.EarthquakeListFragment"
+        android:label="fragment_earth_quake_list"
+        tools:layout="@layout/fragment_earthquake_list" >
+        <action
+            android:id="@+id/action_to_earthquake_map"
+            app:destination="@id/earthquakeMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/earthquakeMapFragment"
+        android:name="com.example.bubble.earthquake.view.EarthQuakeMapFragment"
+        android:label="fragment__earthquake_map"
+        tools:layout="@layout/fragment_earthquake_map" />
+</navigation>

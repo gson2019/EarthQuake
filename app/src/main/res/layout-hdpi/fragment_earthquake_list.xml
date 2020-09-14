@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:visibility="gone"
+        android:id="@+id/listToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary"/>
+    <ProgressBar
+        android:layout_below="@+id/listToolbar"
+        android:id="@+id/earthquakeListProg"
+        android:visibility="visible"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:layout_below="@+id/listToolbar"
+        android:orientation="horizontal"
+        android:id="@+id/wifiReminder"
+        android:visibility="gone"
+        android:layout_marginHorizontal="16dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/wifi_off_24"
+            android:layout_width="@dimen/wifiOffIcon"
+            android:layout_height="@dimen/wifiOffIcon"/>
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Please check your connectivity and restart the App"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/earthquakeRv"
+        android:layout_below="@+id/listToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

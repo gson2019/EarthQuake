@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#03A9F4</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ActionBarTitle" parent="android:Widget.TextView">
+
+        <!-- Customizes the color of the action bar title-->
+        <item name="android:textColor">#FFFFFF</item>
+
+        <!-- Customizes the size of the action bar title-->
+        <item name="android:textSize">16sp</item>
+
+    </style>
+</resources>

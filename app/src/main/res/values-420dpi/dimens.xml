@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="labelSize">16dp</dimen>
+    <dimen name="valueSize">20dp</dimen>
+    <dimen name="wifiOffIcon">32dp</dimen>
+    <dimen name="wifiReminderText">24dp</dimen>
+    <dimen name="actionBarTextSize">24dp</dimen>
+</resources>
